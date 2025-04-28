@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carrossel {
+    position: relative;
+    width: 30%;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: slideAnimation 9s infinite;
+}
+
+.slide {
+    min-width: 100%;
+    height: auto;
+}
+
+img {
+    width: 60%;
+    height: auto;
+}
+

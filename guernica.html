@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <title>Canaã - Pré-Modernismo</title>
+            <link rel="stylesheet" type="text/css" href="guernica.css">
+            <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+            <link rel="icon" type="image/png" href="./icone.png">
+            <style>
+                #map{
+                    height: 200px;     border-radius: 10px
+                }
+                .aumentar-fonte{
+                    font-size: 1.2em !important;
+                }
+
+                .diminuir-fonte{
+                    font-size: 1em !important;
+                }
+                body.contraste #map {
+                    border: 2px solid yellow;}
+   
+       
+        body.contraste a {
+            color: yellow !important;
+        }
+       
+        body.contraste button {
+            background-color: yellow !important;
+            color: black !important;
+        }
+      body.contraste #titulo{
+        color: yellow;
+      }
+            </style>
+        </head>
+        <body>
+            <nav>
+                <DIV ID="linguagem">
+                    <button onclick="mudarIdioma('en')" id="lingua">EN</button>
+		            <button onclick="mudarIdioma('pt')"id="lingua">PT</button>
+                </DIV>
+                <img src="foto.png" id="foto">
+                <ul>
+                    <a href="guernica.html" ><li id="menu1">Início ▼</li></a>
+                    <a href="autores_obras.html" ><li id="menu2">Literatura ▼</li></a>
+                    <a href="index.html" ><li id="menu3">Exercícios ▼</li></a>
+                </ul>
+                <DIV ID="acessibilidade">
+                    <button id="aumentar-fonte-btn"><i class="fa-solid fa-font"></i>+</button>
+                    <button id="diminuir-fonte-btn"><i class="fa-solid fa-font"></i>-</button>
+                    <button id="contraste-btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                    <button id="ler-conteudo-btn"><i class="fa-solid fa-volume-high"></i></button>
+                </DIV>
+            </nav>
+            <div id="imagem_inicio">
+                <img id="imagem_grande" src="./imagembig.png">
+            </div>
+            <br/>
+            <br/>
+            <p class="premodernismo" id="primeirotexto">PRÉ-MODERNISMO</p>
+            <div id="main_2">
+                <main>
+                    <div class="conteudo_introducao">
+                        <h2 class="texto_introducao" id="titulo1">O que foi</h2> <!---->
+                        <h1 class="texto_introducao" id="titulo2">Pré-Modernismo</h1> <!---->
+                        <h3 class="texto_introducao" id="titulo3">O Pré-Modernismo foi um período de transição na literatura brasileira, que ocorreu entre o final do século XIX e o início do século XX. Sem ser considerado um movimento literário oficial, ele rompeu com as tradições do Parnasianismo e Simbolismo, adotando uma linguagem mais simples e aproximando a literatura da realidade social do país. </h3> <!---->
+                    </div>
+                    <div class="abaporu">
+                        <img id="imagem_main" src="./abaporu.webp">
+                    </div>
+                </main>
+                <div id="container_conteudo">
+                <br/>
+                <h1 class="titulo" id="titulo">Contexto histórico do Pré-Modernismo</h1><br/><br/>
+                    <p class="conteudo_principal" id="conteudo_principal">O cenário histórico do <b>Pré-Modernismo</b> é marcado por uma série de transformações políticas, sociais e econômicas que moldaram o Brasil no início do século XX: <br/><br/>
+
+                        <b>A Belle Époque Brasileira:</b> Embora o país estivesse vivenciando um período de desenvolvimento científico e tecnológico, também convivia com grandes desigualdades e conflitos sociais. O progresso das grandes cidades contrastava com a realidade das zonas rurais, onde a miséria e a falta de infraestrutura eram marcantes. <br/><br/>
+                       
+                        <b>Consolidação da República:</b> O Brasil vivia o período da República Velha, em que a política do café com leite, que favorecia as oligarquias de São Paulo e Minas Gerais, consolidava o poder nas mãos de poucos, enquanto o resto do país permanecia em uma profunda crise social e econômica. <br/><br/>
+                       
+                        <b>Secas e Desafios Econômicos:</b> O Nordeste brasileiro enfrentava graves secas, enquanto o ciclo da borracha impulsionava a economia na Amazônia. Esse contraste entre o progresso nas cidades e as dificuldades das zonas rurais tornou-se uma das principais questões sociais abordadas pelos escritores pré-modernistas. <br/><br/>
+                       
+                        <b>Revoltas Populares:</b> Revoltas populares, como a Revolta da Vacina (1904) e a Revolução de 1930, mostraram a insatisfação da população com o governo central, tornando claro o abismo social entre as elites e as classes populares. </p><br/><br/><br/><br/>
+                   
+                    <div id="contexto">
+                        <img id="canudos" src="./canudos.jpg">
+                        <p class="pequeno_texto" id="texto_pequeno">Prisioneiros do arraial de Canudos com soldados ao fundo. Foto publicada na 1ª edição de Os sertões, de Euclides da Cunha com a legenda As prisioneiras. Fotografia de Flávio de Barros. 1897. Arquivo Histórico Museu da República.</p>
+                    </div>
+                    <h1 class="titulo" id="titulo4">Caracteristícas do Pré-Modernismo</h1><br/><br/>
+
+                    <p class="conteudo_principal" id="conteudoTotal"><b>Ruptura com o Academicismo:</b> Os autores pré-modernistas rejeitaram as normas rígidas do Parnasianismo (foco na estética formal) e do Simbolismo (abordagem subjetiva e espiritual), adotando uma escrita mais direta e comprometida com a realidade.<br/><br/>
+
+                        <b>Linguagem Coloquial e Simples:</b> Ao invés da linguagem rebuscada e erudita das gerações anteriores, o Pré-Modernismo se caracterizou pelo uso de uma linguagem simples, coloquial e acessível, capaz de expressar as dificuldades e dilemas da vida cotidiana das classes marginalizadas. <br/><br/>
+                       
+                        <b>Exposição da Realidade Social Brasileira:</b> Os autores desse período se dedicaram a retratar com realismo as desigualdades sociais, a pobreza, a violência e os problemas políticos, econômicos e culturais do Brasil, especialmente nas zonas rurais e nos centros urbanos. <br/><br/>
+                       
+                        <b>Regionalismo e Nacionalismo:</b> Uma forte identidade nacional começa a ser trabalhada, com ênfase nas características regionais, especialmente o Nordeste e o Interior paulista, representando as diferenças sociais, culturais e econômicas que compunham o Brasil da época. <br/><br/>
+                       
+                        <b>Marginalidade das Personagens:</b> Os protagonistas das obras pré-modernistas são frequentemente personagens marginalizados, como o sertanejo, o caipira, o mulato e o imigrante, que, até então, não eram representados com tanto destaque na literatura. <br/><br/>
+                       
+                        <b>Temas Sociais, Políticos e Econômicos:</b> As obras tratam de temas como a fome, a miséria, a falta de educação, a exploração do trabalho rural, a violência nas cidades e o desamparo das populações mais pobres, além de questionamentos sobre o modelo de governo e as instituições. <br/><br/><br/><br/></p>
+               
+                        <div id="galeria">
+                            <h2 id="gale">Galeria de obras:</h2>  
+                            <br/>
+                            <br/>
+                            <div id="ga">
+                                <figure class="item--1">
+                                    <img src="pre-moder.jpg" alt="Gallery image 1" class="gallery__img">
+                                    <p id="obras" >A Boba - Anita Malfatti</p>
+                                </figure>
+                                <figure class="item--2">
+                                    <img src="o-grito.jpg" alt="Gallery image 2" class="gallery__img">
+                                    <p id="obras">O grito - Edvard Munch</p>
+                                </figure>
+                                <figure class="item--3">
+                                    <img src="aba.webp" alt="Gallery image 3" class="gallery__img">
+                                    <p id="obras" >Abaporu - Tarsila do Amaral</p>
+                                </figure>
+                                <figure class="item--4">
+                                    <img src="homi.webp" alt="Gallery image 4" class="gallery__img">
+                                    <p id="obras">O Homem Amarelo - Anita Malfatti</p>
+                                </figure>
+                                <figure class="item--5">
+                                    <img src="vento.jpg" alt="Gallery image 5" class="gallery__img">
+                                    <p id="obras">A Ventania - Anita Malfatti</p>
+                                </figure>
+                                <figure class="item--6">
+                                    <img src="op.webp" alt="Gallery image 6" class="gallery__img">
+                                    <p id="obras">Operários - Tarsila do Amaral</p>
+                                </figure>
+                                <br/>
+                                <br/>
+                            </div>
+                           </div>
+
+                <div id="saibamais">
+                <h2 id="titulosaiba">Saiba Mais</h2>
+                <br/>
+                <br/>
+                <iframe width="914" height="514" src="https://www.youtube.com/embed/DldTRNT3pWg" title="O QUE FOI O PRÉ-MODERNISMO?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+               
+           
+           
+            <footer>
+                <br/>
+                <div class="conteudo_footer">
+                    <div id="sobreoprojeto">
+                        <h2 >Sobre o projeto</h2>
+                        <br/>
+                        <p class="texto_introducao" id="texto_introdutorio">Criamos o site Canaã como um projeto demonstrativo sobre Desenvolvimento de Sistemas do 3° Ensino Médio. Esse trabalho foi feito inteiramente para apresentação aos devidos professores na Integração SESI / SENAI, mais especificamente referente à área de Língua Portuguesa e História, acerca do tema Pré-Modernismo.</p>
+                    </div>
+                    <div id="contatos">
+                        <h2 id="titulo_contatos">Contatos</h2>
+                        <br/>
+                        <ul id="nome_footer">
+                            <a href="https://www.instagram.com/xandy_velucci/"><li><i class="fa-brands fa-instagram"></i> Alexandre Eduardo da Silva Velucci</li></a>
+                            <br/>
+                            <a href="https://www.instagram.com/l.m.breda/"><li><i class="fa-brands fa-instagram"></i> Larissa Moroni Breda</li></a>
+                            <br/>                  
+                            <a href="https://www.instagram.com/anawutzleer/"><li><i class="fa-brands fa-instagram"></i> Ana Clara Wutzler</li></a>
+                            <br/>  
+                            <a href="https://www.instagram.com/eupriscila_pires/"><li><i class="fa-brands fa-instagram"></i> Priscila Pires de Carvalho</li></a>
+                            <br/>
+                        </ul>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </footer>
+           
+            <footer id="footer_baixo">
+                <h3 id="onde">Onde estamos <i class="fa-solid fa-map-location-dot"></i></h3>
+                <div id="map"></div>
+                <br/><br/>
+                <div id="sesi_senai">
+                    <img id="escola1" src="./sesi.png">
+                    <img id="escola" src="./senai.png">
+                </div>
+            </footer>
+
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js">
+           
+            </script>
+            <script>
+                function showMap(latitude, longitude){
+               
+                    var map = L.map('map').setView([latitude,longitude], 13);
+                   
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:'openstreetmap'}).addTo(map);
+                   
+                    L.marker([latitude,longitude]).addTo(map).bindPopup('<div id="estaaqui">Nossa equipe está aqui!</div>').openPopup();
+                   
+                }
+                function getLocation(){
+                    if(navigator.geolocation){
+                        navigator.geolocation.getCurrentPosition(
+                            function(position){
+                                var latitude = position.coords.latitude;
+                                var longitude = position.coords.longitude;
+                                showMap(latitude,longitude);
+                            },function(error){
+                                alert("Erro");
+                            }
+                        );  
+                    }
+                   
+                    else{
+                        alert("Localização não suportada");
+                    }
+                }
+                getLocation();
+                //Aumentar fonte
+                document.getElementById('aumentar-fonte-btn').addEventListener('click',function(){
+                    document.body.classList.add('aumentar-fonte');
+                    document.body.classList.remove('diminuir-fonte')
+                ;});
+               
+                //Dimniuir Fonte
+                document.getElementById('diminuir-fonte-btn').addEventListener('click',function(){
+                    document.body.classList.add('diminuir-fonte');
+                    document.body.classList.remove('aumentar-fonte')
+                ;});
+                //Alterar o contraste
+                document.getElementById('contraste-btn').addEventListener('click', function() {
+                    document.body.classList.toggle('contraste');
+                   
+                    // Alterando a cor do título e subtítulo
+                    const titulo = document.getElementById('titulo4');
+                    const gale = document.getElementById('gale');
+                    if(titulo.style.color === '' || titulo.style.color === 'white'){
+                        titulo.style.color = 'yellow';
+                    } else if(titulo.style.color === 'yellow'){
+                        titulo.style.color = 'white';
+                    }
+                    if(gale.style.color === '' || gale.style.color === 'white'){
+                        gale.style.color = 'yellow';
+                    } else if(gale.style.color === 'yellow'){
+                        gale.style.color = 'white';
+                    }
+
+                    // Alterando o conteúdo do primeiro footer
+                    footers = document.getElementsByClassName("conteudo_footer");
+                    for(let conteudo_footer of footers){
+                        if(conteudo_footer.style.backgroundColor == ''){
+                            conteudo_footer.style.backgroundColor = "black";
+                            conteudo_footer.style.color = "yellow";
+                            conteudo_footer.style.border = "2px solid yellow"; // Adiciona a borda amarela
+                        }
+                        else if(conteudo_footer.style.backgroundColor == 'black'){
+                            conteudo_footer.style.backgroundColor = "#333333";
+                            conteudo_footer.style.color = "white";
+                            conteudo_footer.style.border = "2px solid white"; // Altera a borda para branco
+                        }
+                        else if(conteudo_footer.style.backgroundColor == 'rgb(175, 167, 138)'){
+                            conteudo_footer.style.backgroundColor = "black";
+                            conteudo_footer.style.color = "yellow";
+                            conteudo_footer.style.border = "2px solid yellow"; // Adiciona a borda amarela
+                        }
+                    }
+
+                    // Alterando a cor da introdução
+                    introducao = document.getElementsByClassName("texto_introducao");
+                    for(let texto_introducao of introducao){
+                        if(texto_introducao.style.color == ''){
+                            texto_introducao.style.color = "yellow";
+                        }
+                        else if(texto_introducao.style.color == 'yellow'){
+                            texto_introducao.style.color = "white";
+                        }
+                        else if(texto_introducao.style.color == 'white'){
+                            texto_introducao.style.color = "yellow";
+                        }
+                    }
+
+                    // Alterando a cor do carrossel
+                    carrossel = document.getElementsByClassName("paragrafo_carrossel");
+                    for(let paragrafo_carrossel of carrossel){
+                        if(paragrafo_carrossel.style.color == ''){
+                            paragrafo_carrossel.style.color = "yellow";
+                        }
+                        else if(paragrafo_carrossel.style.color == 'yellow'){
+                            paragrafo_carrossel.style.color = "white";
+                        }
+                        else if(paragrafo_carrossel.style.color == 'white'){
+                            paragrafo_carrossel.style.color = "yellow";
+                        }
+                    }
+
+                    // Garantindo que o segundo footer não receba borda
+                    const footerBaixo = document.getElementById('footer_baixo');
+                    footerBaixo.style.border = 'none'; // Remove qualquer borda do segundo footer
+                });
+
+                document.getElementById('ler-conteudo-btn').addEventListener('click',
+            function(){
+                const texto = document.body.innerText;
+                const falante = new SpeechSynthesisUtterance(texto);
+                falante.lang = 'pt-BR';
+                falante.volume = 1;
+                falante.rate = 1;
+                falante.pitch = 2;
+                speechSynthesis.speak(falante);
+            }
+        )
+                let index = 0;
+
+
+                function moveCarousel() {
+                    const carousel = document.querySelector(".slides");
+                    index++;
+
+                    if (index >= 7) {
+                        index = 0;
+                    }
+
+                    const translateValue = -index * 100 + "%";
+                    carousel.style.transform = "translateX(" + translateValue + ")";
+                }
+
+                setInterval(moveCarousel, 2000); // Troca a cada 5 segundos
+            </script>
+        </body>
+        <script>
+            //traduções
+            const traducoes = {
+                "pt":{
+                    "menu1": "Início ▼",
+                    "menu2":"Literatura ▼",
+                    "menu3":"Exercícios ▼",
+                    "primeirotexto": "PRÉ-MODERNISMO",
+                    "titulo1":"O que foi",
+                    "titulo2":"Pré-Modernismo",
+                    "titulo3":"O Pré-Modernismo foi um período de transição na literatura brasileira, que ocorreu entre o final do século XIX e o início do século XX. Sem ser considerado um movimento literário oficial, ele rompeu com as tradições do Parnasianismo e Simbolismo, adotando uma linguagem mais simples e aproximando a literatura da realidade social do país.",
+                    "titulo":"Contexto histórico do Pré-Modernismo",
+                    "conteudo_principal":"O cenário histórico do <b>Pré-Modernismo</b> é marcado por uma série de transformações políticas, sociais e econômicas que moldaram o Brasil no início do século XX: <br/><br/><b>A Belle Époque Brasileira:</b> Embora o país estivesse vivenciando um período de desenvolvimento científico e tecnológico, também convivia com grandes desigualdades e conflitos sociais. O progresso das grandes cidades contrastava com a realidade das zonas rurais, onde a miséria e a falta de infraestrutura eram marcantes. <br/><br/><b>Consolidação da República:</b> O Brasil vivia o período da República Velha, em que a política do café com leite, que favorecia as oligarquias de São Paulo e Minas Gerais, consolidava o poder nas mãos de poucos, enquanto o resto do país permanecia em uma profunda crise social e econômica. <br/><br/> <b>Secas e Desafios Econômicos:</b> O Nordeste brasileiro enfrentava graves secas, enquanto o ciclo da borracha impulsionava a economia na Amazônia. Esse contraste entre o progresso nas cidades e as dificuldades das zonas rurais tornou-se uma das principais questões sociais abordadas pelos escritores pré-modernistas. <br/><br/> <b>Revoltas Populares:</b> Revoltas populares, como a Revolta da Vacina (1904) e a Revolução de 1930, mostraram a insatisfação da população com o governo central, tornando claro o abismo social entre as elites e as classes populares. </p><br/><br/><br/><br/>",
+                    "texto_pequeno":"Prisioneiros do arraial de Canudos com soldados ao fundo. Foto publicada na 1ª edição de Os sertões, de Euclides da Cunha com a legenda As prisioneiras. Fotografia de Flávio de Barros. 1897. Arquivo Histórico Museu da República.",
+                    "titulo4":"Caracteristícas do Pré-Modernismo",
+                    "conteudoTotal":"<b>Ruptura com o Academicismo:</b> Os autores pré-modernistas rejeitaram as normas rígidas do Parnasianismo (foco na estética formal) e do Simbolismo (abordagem subjetiva e espiritual), adotando uma escrita mais direta e comprometida com a realidade.<br/><br/>  <b>Linguagem Coloquial e Simples:</b> Ao invés da linguagem rebuscada e erudita das gerações anteriores, o Pré-Modernismo se caracterizou pelo uso de uma linguagem simples, coloquial e acessível, capaz de expressar as dificuldades e dilemas da vida cotidiana das classes marginalizadas. <br/><br/> <b>Exposição da Realidade Social Brasileira:</b> Os autores desse período se dedicaram a retratar com realismo as desigualdades sociais, a pobreza, a violência e os problemas políticos, econômicos e culturais do Brasil, especialmente nas zonas rurais e nos centros urbanos. <br/><br/> <b>Regionalismo e Nacionalismo:</b> Uma forte identidade nacional começa a ser trabalhada, com ênfase nas características regionais, especialmente o Nordeste e o Interior paulista, representando as diferenças sociais, culturais e econômicas que compunham o Brasil da época. <br/><br/> <b>Marginalidade das Personagens:</b> Os protagonistas das obras pré-modernistas são frequentemente personagens marginalizados, como o sertanejo, o caipira, o mulato e o imigrante, que, até então, não eram representados com tanto destaque na literatura. <br/><br/> <b>Temas Sociais, Políticos e Econômicos:</b> As obras tratam de temas como a fome, a miséria, a falta de educação, a exploração do trabalho rural, a violência nas cidades e o desamparo das populações mais pobres, além de questionamentos sobre o modelo de governo e as instituições. <br/><br/><br/><br/></p>",
+                    "gale":"Galeria de obras:",
+                    "titulosaiba":"Saiba Mais",
+                    "sobreoprojeto":"Sobre o projeto",
+                    "texto_introdutorio":"Criamos o site Canaã como um projeto demonstrativo sobre Desenvolvimento de Sistemas do 3° Ensino Médio. Esse trabalho foi feito inteiramente para apresentação aos devidos professores na Integração SESI / SENAI, mais especificamente referente à área de Língua Portuguesa e História, acerca do tema Pré-Modernismo.",
+                    "titulo_contatos":"Contatos",
+                    "onde":"Onde estamos",
+                    "popup": "Você está aqui!",
+                    "estaaqui": "Nossa equipe está aqui!!"
+                },
+                "en":{
+                "menu1": "Home ▼",
+                "menu2": "Literature ▼",
+                "menu3": "Exercises ▼",
+                "primeirotexto": "PRE-MODERNISM",
+                "titulo1": "What was the",
+                "titulo2": "Pre-Modernism",
+                "titulo3": "Pre-Modernism was a transitional period in Brazilian literature that occurred between the late 19th and early 20th centuries. Although not considered an official literary movement, it broke away from the traditions of Parnassianism and Symbolism, adopting simpler language and bringing literature closer to the country's social reality.",
+                "titulo": "Historical context of Pre-Modernism",
+                "conteudo_principal": "The historical scenario of <b>Pre-Modernism</b> is marked by a series of political, social, and economic transformations that shaped Brazil in the early 20th century: <br/><br/><b>The Brazilian Belle Époque:</b> Although the country was experiencing a period of scientific and technological development, it also faced great inequalities and social conflicts. The progress of large cities contrasted with the reality of rural areas, where misery and lack of infrastructure were striking. <br/><br/><b>Consolidation of the Republic:</b> Brazil was in the Old Republic period, when the 'coffee with milk' politics, which favored the oligarchies of São Paulo and Minas Gerais, consolidated power in the hands of a few, while the rest of the country remained in a deep social and economic crisis. <br/><br/> <b>Droughts and Economic Challenges:</b> The Brazilian Northeast faced severe droughts, while the rubber boom boosted the economy in the Amazon. This contrast between urban progress and rural difficulties became one of the main social issues addressed by pre-modernist writers. <br/><br/> <b>Popular Revolts:</b> Popular revolts, such as the Vaccine Revolt (1904) and the 1930 Revolution, showed the population's dissatisfaction with the central government, making clear the social gap between the elites and the lower classes. </p><br/><br/><br/><br/>",
+                "texto_pequeno": "Prisoners from the Canudos settlement with soldiers in the background. Photo published in the 1st edition of Os Sertões by Euclides da Cunha with the caption The female prisoners. Photograph by Flávio de Barros. 1897. Historical Archive of the Museum of the Republic.",
+                "titulo4": "Characteristics of Pre-Modernism",
+                "conteudoTotal": "<b>Break with Academicism:</b> Pre-modernist authors rejected the rigid rules of Parnassianism (focus on formal aesthetics) and Symbolism (subjective and spiritual approach), adopting a more direct and reality-committed writing style.<br/><br/>  <b>Colloquial and Simple Language:</b> Instead of the elaborate and erudite language of previous generations, Pre-Modernism was characterized by the use of simple, colloquial, and accessible language, capable of expressing the hardships and dilemmas of daily life for marginalized classes. <br/><br/> <b>Portrayal of Brazilian Social Reality:</b> Authors of this period dedicated themselves to realistically portraying social inequalities, poverty, violence, and Brazil's political, economic, and cultural problems, especially in rural areas and urban centers. <br/><br/> <b>Regionalism and Nationalism:</b> A strong national identity began to be developed, with emphasis on regional characteristics, especially the Northeast and the São Paulo countryside, representing the social, cultural, and economic differences that made up Brazil at the time. <br/><br/> <b>Marginalized Characters:</b> The protagonists of pre-modernist works are often marginalized characters, such as the backlands man (sertanejo), the hillbilly (caipira), the mulatto, and the immigrant, who until then had not been prominently represented in literature. <br/><br/> <b>Social, Political, and Economic Themes:</b> The works deal with themes such as hunger, poverty, lack of education, exploitation of rural labor, urban violence, and the neglect of the poorest populations, in addition to questioning the government model and institutions. <br/><br/><br/><br/></p>",
+                "gale": "Gallery of works:",
+                "titulosaiba": "Learn More",
+                "sobreoprojeto": "About the project",
+                "texto_introdutorio": "We created the Canaã website as a demonstration project for Systems Development by 3rd-year high school students. This work was entirely made for presentation to the respective teachers at the SESI / SENAI Integration, specifically in the Portuguese Language and History areas, regarding the topic of Pre-Modernism.",
+                "titulo_contatos": "Contacts",
+                "onde": "Where we are",
+                "estaaqui": "Our team are here!"
+                }
+            }
+           
+                function mudarIdioma(idioma) {
+                    document.getElementById("menu1").innerText = traducoes[idioma].menu1;
+                    document.getElementById("menu2").innerText = traducoes[idioma].menu2;
+                    document.getElementById("menu3").innerText = traducoes[idioma].menu3;
+                    document.getElementById("primeirotexto").innerText = traducoes[idioma].primeirotexto;
+                    document.getElementById("titulo1").innerText = traducoes[idioma].titulo1;
+                    document.getElementById("titulo").innerText = traducoes[idioma].titulo;
+                    document.getElementById("titulo2").innerText = traducoes[idioma].titulo2;
+                    document.getElementById("titulo3").innerText = traducoes[idioma].titulo3;
+                    document.getElementById("conteudo_principal").innerHTML = traducoes[idioma].conteudo_principal;
+                    document.getElementById("texto_pequeno").innerText = traducoes[idioma].texto_pequeno;
+                    document.getElementById("titulo4").innerText = traducoes[idioma].titulo4;
+                    document.getElementById("conteudoTotal").innerHTML = traducoes[idioma].conteudoTotal;
+                    document.getElementById("gale").innerText = traducoes[idioma].gale;
+                    document.getElementById("titulosaiba").innerText = traducoes[idioma].titulosaiba;
+                    document.querySelector("#sobreoprojeto h2").innerText = traducoes[idioma].sobreoprojeto;
+                    document.getElementById("texto_introdutorio").innerText = traducoes[idioma].texto_introdutorio;
+                    document.getElementById("titulo_contatos").innerText = traducoes[idioma].titulo_contatos;
+                    document.getElementById("onde").innerText = traducoes[idioma].onde;
+                }
+        </script>
+    </html>

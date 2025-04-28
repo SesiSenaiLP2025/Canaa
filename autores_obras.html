@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleAB.css" !important>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+	<link rel="icon" type="image/png" href="./icone.png">
+
+    <title>Autores e Obras</title>
+</head>
+
+<style>
+    #map{
+        height: 200px;
+    }
+	.aumentar-fonte{
+        font-size: 1.2em !important;
+    }
+
+    .diminuir-fonte{
+        font-size: 1em !important;
+    }
+	body.contraste {
+			background-color: black !important;
+			color: yellow !important;
+		}
+		
+		body.contraste a {
+			color: yellow !important;
+		}
+		
+		body.contraste button {
+			background-color: yellow !important;
+			color: black !important;
+		}
+
+		body.contraste #container {
+    background-color: black !important;
+    color: yellow !important;
+    border: 1px solid yellow;
+}
+
+		body.contraste #container h3,
+		body.contraste #container p {
+			color: yellow !important;
+		}
+
+		body.contraste .obras p {
+			color: yellow !important;
+		}
+
+		body.contraste .obras img {
+			border: 2px solid yellow;
+		}
+		body.contraste #autores1,
+		body.contraste #autores2,
+		body.contraste #autores3,
+		body.contraste #autores4,
+		body.contraste #autores5 {
+			background-color: black !important;
+			color: yellow !important;
+			filter: brightness(100%) !important;
+		}
+
+		body.contraste footer,
+		body.contraste #conteudo_footer,
+		body.contraste #sobreoprojeto,
+		body.contraste #contatos,
+		body.contraste #footer_baixo,
+		body.contraste h2,
+		body.contraste p,
+		body.contraste li {
+			background-color: black !important;
+			color: yellow !important;
+		}
+		body.contraste #map {
+    border: 2px solid yellow};
+</style>
+
+
+<body>
+
+    <nav>
+		<div ID="linguagem">
+			<button onclick="mudarIdioma('en')" id="lingua">EN</button>
+			<button onclick="mudarIdioma('pt')"id="lingua">PT</button>
+		</div>
+        <img src="foto.png" id="foto">
+        <ul>
+            <a href="guernica.html"><li id="um">Início ▼</li></a>
+            <a href="autores_obras.html"><li  id="dois">Literatura ▼</li></a>
+            <a href="index.html"><li id="tres">Exercícios ▼</li></a>
+        </ul>
+        <DIV ID="acessibilidade">
+            <button id="aumentar-fonte-btn"><i class="fa-solid fa-font"></i>+</button>
+            <button id="diminuir-fonte-btn"><i class="fa-solid fa-font"></i>-</button>
+            <button id="contraste-btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
+            <button id="ler-conteudo-btn"><i class="fa-solid fa-volume-high"></i></button>
+        </DIV>
+    </nav>	
+	<div id="imagem_inicio">
+		<img id="imagem_grande" src="./imagembig.png">
+	</div>
+    <main>
+	    <p id="quatro" class="premodernismo">AUTORES E OBRAS DO PRÉ MODERNISMO</p>
+        <div class="autores">
+			<div id="container">
+				<div id="header">
+				<h3>Euclides da Cunha (1866-1909):</h3>
+				</div id="header">
+				<div id="textos">
+					<p id="chave">Obra-chave: Os Sertões (1902)</p> 
+					<p id="seis">Euclides da Cunha, que em Os Sertões uniu literatura, ciência e jornalismo para retratar a realidade do sertão nordestino, com uma linguagem técnica e um olhar influenciado pelo determinismo e positivismo.</p>
+				</div>
+					<div class="obras-container">
+						<div class="obras-container">
+							<a href="https://www2.senado.leg.br/bdsf/bitstream/handle/id/1038/573595.pdf"><div class="obras">
+								<img src="./imgm/img1.png" alt="livro">
+								<p id="sete">Amazônia, um paraíso perdido</p>
+							</div></a>
+							<a href="./os-sertoes.pdf"><div class="obras">
+								<img src="./imgm/img2.png" alt="livro">
+								<p id="arrumar1">Os Sertões (1902)</p>
+							</div></a>
+							<a href="./diariodeumaexpedição.pdf"><div class="obras">
+								<img src="./imgm/img3.png" alt="livro">
+								<p id="oito">Canudos: diario de uma expedição</p>
+							</div></a>
+						</div>
+					</div>
+			</div>
+			<div id="container">
+				<div id="header">
+				<h3 id="nove">Graça Aranha (1868-1931): </h3>
+				</div id="header">
+				<div id="textos">
+					<p id="chave_dois">Obra-chave: Canaã (1902) </p>
+					<p id="dez">Graça Aranha aborda a questão da imersão do Brasil na
+						modernidade e o confronto de culturas entre os imigrantes e 
+						os brasileiros. </p>
+				</div>
+					<div class="obras-container">
+						<div class="obras-container">
+							<a href="https://digital.bbm.usp.br/bitstream/bbm/3930/1/022419_COMPLETO.pdf"><div class="obras">
+								<img src="./imgm/img4.png" alt="livro">
+								<p id="onze">A estética da vida</p>
+							</div></a>
+							<a href="https://fundar.org.br/wp-content/uploads/2021/06/canaa.pdf"><div class="obras">
+								<img src="./imgm/img5.png" alt="livro">
+								<p id="doze">Canaã</p>
+							</div></a>
+							<a href="https://upload.wikimedia.org/wikipedia/commons/1/19/Malazarte.pdf"><div class="obras">
+								<img src="./imgm/img6.png" alt="livro">
+								<p id="treze">Malazarte</p>
+							</div></a>
+						</div>
+					</div>
+			</div>
+					
+			<div id="container">
+				<div id="header">
+				<h3 id="quartoze">Monteiro Lobato (1882-1948): </h3>
+				</div>
+				<div id="textos">
+					<p id="chave_tres">Obra-chave: Urupês (1918)</p>
+					<p id="quinze">Monteiro Lobato, em obras como Urupês, fez uma crítica ácida ao atraso do Brasil rural, criando o personagem Jeca Tatu como símbolo da miséria e do abandono do homem do campo; sua escrita é acessível e voltada à conscientização nacional.</p> 
+				</div>
+					 <div class="obras-container">
+						<div class="obras-container">
+							<a href="./Monteiro_Lobato_-_O_Saci.pdf"><div class="obras">
+								<img src="./imgm/img7.png" alt="livro">
+								<p id="dezesseis">O saci</p>
+							</div></a>
+							<a href="./Urupes-conto-Monteiro-Lobato.pdf"><div class="obras">
+								<img src="./imgm/img8.png" alt="livro">
+								<p id="arrumar2">Urupês</p>
+							</div></a>
+							<a href="./Peter-Pan-Monteiro-Lobato.pdf"><div class="obras">
+								<img src="./imgm/img9.png" alt="livro">
+								<p id="dezessete">Peter Pan</p>
+							</div></a>
+						</div>
+					</div>
+			</div>
+			<div id="container">
+				<div id="header">
+				<h3 id="dezoito">Lima Barreto (1881-1922):</h3>
+				</div>
+				<div id="textos">
+					<p id="chave_quatro">Obra-chave: Triste Fim de Policarpo Quaresma (1915)</p>
+					<p id="dezenove"> Lima Barreto, em Triste Fim de Policarpo Quaresma, destacou-se por sua linguagem simples e direta, voltada à denúncia do racismo, da hipocrisia da elite e da exclusão social, com uma visão crítica e amarga da política e do nacionalismo exagerado. </p> 
+				</div>
+				<div class="obras-container">
+						<div class="obras-container">
+							<a href="./bv000156.pdf"><div class="obras">
+								<img src="./imgm/img10.png" alt="livro">
+								<p id="arrumar3">Numa e ninfa</p>
+							</div></a>
+							<a href="./bv000157.pdf"><div class="obras">
+								<img src="./imgm/img11.png" alt="livro">
+								<p id="arrumar4">Recordações do escrivão Isaías Caminha</p>
+							</div></a>
+							<a href="./bv000159.pdf"><div class="obras">
+								<img src="./imgm/img12.png" alt="livro">
+								<p id="vinte">Triste fim do Poliquarmo Quaresma</p>
+							</div></a>
+						</div>
+					</div>
+			</div>
+			<div id="container">
+				<div id="header">
+				<h3 id="vinte_um">Augusto dos Anjos (1884-1914):</h3>
+				</div>
+				<div id="textos">
+					<p id="chave_cinco">Obra-chave: Eu (1912)</p>
+					<p id="vinte_dois">Augusto dos Anjos apresentou uma poesia singular e difícil de classificar, marcada pelo pessimismo, temas como a morte e a decomposição, além de vocabulário científico e tom existencial, como se vê na obra Eu.</p>
+				</div>	
+				<div class="obras-container">
+						<div class="obras-container">
+							<a href="http://www.dominiopublico.gov.br/download/texto/bv.00054a.pdf"><div class="obras">
+								<img src="./imgm/img13.png" alt="livro">
+								<p id="vinte_tres">Eu</p>
+							</div></a>
+						</div>
+					</div>
+			</div>
+			<br/>
+			<br/>
+        </div>
+		<br/>
+		<br/>
+		<div id="saibamais">
+					<h2 id="titulosaiba">Saiba mais sobre os principais autores</h2>
+					<br/>
+					<br/>
+					<div id="mais_autores">
+						<a href="https://youtu.be/gzYPIaPGMjs"><div id="autores1">
+							<img id="autor" src="./euclides.jpeg" >
+							<div id="textinho">
+							<h4 id="vinte_quatro">Euclides da Cunha</h4>
+							<p class="pequeno_texto"><i class="fa-solid fa-play" id="play"> </i>    Profa. Jéssica Novaes |  Querido Português</p>
+							</div>
+						</div></a>
+						<a href="https://youtu.be/OnTQibaomko"><div id="autores2">
+							<img id="autor" src="./graça_aranha.jpeg">
+							<div id="textinho">
+							<h4 id="vinte_cinco">Graça Aranha</h4>
+							<p class="pequeno_texto"><i class="fa-solid fa-play" id="play"> </i>    Profa. Jéssica Novaes |  Querido Português</p>
+							</div>
+						</div><a>
+						<a href="https://youtu.be/B44_wHKTgA8"><div id="autores3">
+							<img id="autor" src="./augusto.jpg">
+							<div id="textinho">
+							<h4 id="vinte_seis">Augusto dos Anjos</h4>
+							<p class="pequeno_texto"><i class="fa-solid fa-play" id="play"> </i>    Profa. Jéssica Novaes |  Querido Português</p>
+							</div>
+						</div></a>
+						<a href="https://youtu.be/69XqX-24TuQ"><div id="autores4">
+							<img id="autor" src="./monteiro.jpeg">
+							<div id="textinho">
+							<h4 id="vinte_sete">Monteiro Lobato</h4>
+							<p class="pequeno_texto"><i class="fa-solid fa-play" id="play"> </i>    Profa. Jéssica Novaes |  Querido Português</p>
+							</div>
+						</div></a>
+						<a href="https://youtu.be/o8lfjHuHSuI"><div id="autores5">
+							<img id="autor" src="./lima.png">
+							<div id="textinho">
+							<h4 id="vinte_oito">Lima Barreto</h4>
+							<p class="pequeno_texto"><i class="fa-solid fa-play" id="play"></i>    Profa. Jéssica Novaes |  Querido Português</p>
+							</div>
+						</div></a>
+					</div>
+			</div>
+    </main>
+
+    <footer>
+        <br/>
+        <div id="conteudo_footer">
+            <div id="sobreoprojeto">
+                <h2 id="vinte_nove">Sobre o projeto</h2>
+                <br/>
+                <p id="trinta">Criamos o site Canaã como um projeto demonstrativo sobre Desenvolvimento de Sistemas do 3° Ensino Médio. Esse trabalho foi feito inteiramente para apresentação aos devidos professores na Integração SESI / SENAI, mais especificamente referente à área de Língua Portuguesa e História, acerca do tema Pré-Modernismo.</p>
+            </div>
+            <div id="contatos">
+                <h2 id="ctt">Contatos</h2>
+                <br/>
+                <ul>
+					<a href="https://www.instagram.com/xandy_velucci/"><li><i class="fa-brands fa-instagram"></i> Alexandre Eduardo da Silva Velucci</li></a>
+					<br/>
+					<a href="https://www.instagram.com/l.m.breda/"><li><i class="fa-brands fa-instagram"></i> Larissa Moroni Breda</li></a>
+					<br/>					
+					<a href="https://www.instagram.com/anawutzleer/"><li><i class="fa-brands fa-instagram"></i> Ana Clara Wutzler</li></a>
+					<br/>	
+					<a href="https://www.instagram.com/eupriscila_pires/"><li><i class="fa-brands fa-instagram"></i> Priscila Pires de Carvalho</li></a>
+					<br/>
+				</ul>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </footer>
+    <footer id="footer_baixo">
+        <h3 id="onde">Onde estamos <i class="fa-solid fa-map-location-dot"></i></h3>
+        <div id="map"></div>
+        <br/><br/>
+		<div id="sesi_senai">
+			<img id="escola1" src="./sesi.png">
+			<img id="escola" src="./senai.png">
+		</div>
+    </footer>
+    
+</body>
+
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js">
+			
+    </script>
+        <script>
+			//ingles
+			const traducoes = {
+			"pt":{
+				"um": "Início ▼",
+				"dois": "Literatura ▼",
+				"tres": "Exercícios ▼",
+				"quatro": "AUTORES E OBRAS DO PRÉ MODERNISMO",
+				"chave": "Obra-chave: Os Sertões (1902)",
+				"seis": "Euclides da Cunha, que em Os Sertões uniu literatura, ciência e jornalismo para retratar a realidade do sertão nordestino, com uma linguagem técnica e um olhar influenciado pelo determinismo e positivismo.",
+				"chave_dois": "Obra-chave: Canaã (1902)",
+				"dez": "Graça Aranha aborda a questão da imersão do Brasil na modernidade e o confronto de culturas entre os imigrantes e os brasileiros.",	
+				"quinze": "Monteiro Lobato, em obras como Urupês, fez uma crítica ácida ao atraso do Brasil rural, criando o personagem Jeca Tatu como símbolo da miséria e do abandono do homem do campo; sua escrita é acessível e voltada à conscientização nacional.",
+				"dezenove": "Lima Barreto, em Triste Fim de Policarpo Quaresma, destacou-se por sua linguagem simples e direta, voltada à denúncia do racismo, da hipocrisia da elite e da exclusão social, com uma visão crítica e amarga da política e do nacionalismo exagerado. ",
+				"onde": "Onde estamos",
+				"ctt": "Contatos",
+				"vinte_nove": "Sobre o projeto",
+				"trinta": "Criamos o site Canaã como um projeto demonstrativo sobre Desenvolvimento de Sistemas do 3° Ensino Médio. Esse trabalho foi feito inteiramente para apresentação aos devidos professores na Integração SESI / SENAI, mais especificamente referente à área de Língua Portuguesa e História, acerca do tema Pré-Modernismo.",
+				"titulosaiba": "Saiba mais sobre os principais autores",
+				"vinte_dois": "Augusto dos Anjos apresentou uma poesia singular e difícil de classificar, marcada pelo pessimismo, temas como a morte e a decomposição, além de vocabulário científico e tom existencial, como se vê na obra Eu.",
+				"chave_tres": "Obra-chave: Urupês (1918)",
+				"chave_quatro": "Obra-chave: Triste Fim de Policarpo Quaresma (1915)",
+				"chave_cinco": "Obra-chave: Eu (1912)",
+
+
+			},
+			"en":{
+				"um": "Start ▼",
+				"dois": "Literature ▼",
+				"tres": "Exercises ▼",
+				"quatro": "AUTHORS AND WORKS OF PRE-MODERNISM",
+				"chave": "Key work: Os Sertões (1902)",
+				"seis": "Euclides da Cunha, who in Os Sertões combined literature, science and journalism to portray the reality of the northeastern backlands, with technical language and a perspective influenced by determinism and positivism.",
+				"dez": "Graça Aranha addresses the issue of Brazil's immersion in modernity and the clash of cultures between immigrants and Brazilians.",
+				"quinze": "Monteiro Lobato, in works such as Urupês, made a harsh criticism of the backwardness of rural Brazil, creating the character Jeca Tatu as a symbol of poverty and abandonment of rural people; his writing is accessible and aimed at raising national awareness.",
+				"dezenove": "Lima Barreto, in Triste Fim de Policarpo Quaresma, stood out for his simple and direct language, aimed at denouncing racism, elite hypocrisy and social exclusion, with a critical and bitter view of politics and exaggerated nationalism.",
+				"onde": "Where we are",
+				"ctt": "Contacts",
+				"vinte_nove":"About the project",
+				"trinta": "We created the Canaã website as a demonstration project for Systems Development by 3rd-year high school students. This work was entirely made for presentation to the respective teachers at the SESI / SENAI Integration, specifically in the Portuguese Language and History areas, regarding the topic of Pre-Modernism.",
+				"titulosaiba": "Learn more about the main authors",
+				"vinte_dois":"Augusto dos Anjos presented a unique and hard-to-classify poetry, characterized by pessimism, themes such as death and decomposition, as well as scientific vocabulary and an existential tone, as seen in his work Eu",
+				"chave_dois": "Key work: Canaã (1902)",
+				"chave_tres": "Key work: Urupês (1918)",
+				"chave_quatro": "Key work: Triste Fim de Policarpo Quaresma (1915)",
+				"chave_cinco": "Key work: Eu (1912)",
+
+
+			}
+		}
+
+		function mudarIdioma(idioma){
+			document.getElementById("um").innerText = traducoes[idioma].um;
+			
+			document.getElementById("dois").innerText = traducoes[idioma].dois;
+
+			document.getElementById("tres").innerText = traducoes[idioma].tres;
+
+			document.getElementById("quatro").innerText = traducoes[idioma].quatro;
+
+			document.getElementById("chave").innerText = traducoes[idioma].chave;
+
+			document.getElementById("seis").innerText = traducoes[idioma].seis;
+
+			document.getElementById("dez").innerText = traducoes[idioma].dez;
+
+			document.getElementById("quinze").innerText = traducoes[idioma].quinze;
+
+			document.getElementById("dezenove").innerText = traducoes[idioma].dezenove;
+
+			document.getElementById("onde").innerText = traducoes[idioma].onde;
+
+			document.getElementById("ctt").innerText = traducoes[idioma].ctt;
+
+			document.getElementById("vinte_nove").innerText = traducoes[idioma].vinte_nove;
+
+			document.getElementById("trinta").innerText = traducoes[idioma].trinta;
+
+			document.getElementById("titulosaiba").innerText = traducoes[idioma].titulosaiba;
+
+			document.getElementById("vinte_dois").innerText = traducoes[idioma].vinte_dois;
+
+			document.getElementById("titulosaiba").innerText = traducoes[idioma].titulosaiba;
+
+			document.getElementById("chave_dois").innerText = traducoes[idioma].chave_dois;
+
+			document.getElementById("chave_tres").innerText = traducoes[idioma].chave_tres;
+
+			document.getElementById("chave_quatro").innerText = traducoes[idioma].chave_quatro;
+
+			document.getElementById("chave_cinco").innerText = traducoes[idioma].chave_cinco;
+		}
+
+
+
+
+
+
+
+
+
+            //Função para criar o mapa
+            function showMap(latitude, longitude){
+                
+                //Cria o mapa com a localização atual
+                var map = L.map('map').setView([latitude,longitude], 13);
+                
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:'openstreetmap'}).addTo(map);
+                
+                //Adiciona o pin da localização
+                L.marker([latitude,longitude]).addTo(map).bindPopup('Você está aqui!').openPopup();			
+                
+            }
+            //Função para obter a localização atual
+            function getLocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(
+                        function(position){
+                            var latitude = position.coords.latitude;
+                            var longitude = position.coords.longitude;
+                            showMap(latitude,longitude);
+                        },function(error){
+                            alert("Erro");
+                        }
+                    );	
+                }
+                
+                else{
+                    alert("Localização não suportada");
+                }
+            }
+            getLocation();
+                //Aumentar fonte
+                document.getElementById('aumentar-fonte-btn').addEventListener('click',function(){
+                    document.body.classList.add('aumentar-fonte');
+                    document.body.classList.remove('diminuir-fonte')
+                ;});
+                
+                //Dimniuir Fonte
+                document.getElementById('diminuir-fonte-btn').addEventListener('click',function(){
+                    document.body.classList.add('diminuir-fonte');
+                    document.body.classList.remove('aumentar-fonte')
+                ;});
+                //Alterar o contraste
+                document.getElementById('contraste-btn').addEventListener('click',function(){
+                    document.body.classList.toggle('contraste')
+                ;});
+
+                document.getElementById('ler-conteudo-btn').addEventListener('click', 
+			function(){
+				const texto = document.body.innerText;
+				const falante = new SpeechSynthesisUtterance(texto);
+				falante.lang = 'pt-BR';
+				falante.volume = 1;
+				falante.rate = 1;
+				falante.pitch = 2;
+				speechSynthesis.speak(falante);
+			}
+
+			
+		)
+                
+        </script>
+</html>

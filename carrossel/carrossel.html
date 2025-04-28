@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel Automático</title>
+    <link rel="stylesheet" href="carroselstyle.css">
+</head>
+<body>
+    <div class="carrossel">
+        <div class="slides">
+            <div class="slide">
+                <img src="aba.webp" alt="Imagem 1">
+                <p>Abaporu - Tarsila do Amaral</p>
+            </div>
+            <div class="slide">
+                <img src="cana.webp" alt="Imagem 2">
+                <p>Canaã - Graça Aranha</p>
+            </div>
+            <div class="slide">
+                <img src="homi.webp" alt="Imagem 3">
+                <p>O Homem Amarelo — Anita Malfatti</p>
+               
+            </div>
+            <div class="slide">
+                <img src="op.webp" alt="Imagem 4">
+                <p>Operários - Tarsila do Amaral</p>
+             
+            </div>
+            <div class="slide">
+                <img src="Os_Sertões.jpg" alt="Imagem 5">
+                <p>Os Sertões - Euclides da Cunha</p>
+            </div>
+            <div class="slide">
+                <img src="vento.jpg" alt="Imagem 6">
+                <p>A Ventania - Anita Malfatti</p>
+            </div>
+            <div class="slide">
+                <img src="Urupês.jpeg" alt="Imagem 7">
+                <p>Urupês - Monteiro Lobato</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let index = 0;
+
+    function moveCarousel() {
+        const carousel = document.querySelector(".slides");
+        index++;
+
+        if (index >= 7) {
+            index = 0;
+        }
+
+        const translateValue = -index * 100 + "%";
+        carousel.style.transform = "translateX(" + translateValue + ")";
+    }
+
+    setInterval(moveCarousel, 2000); // Troca a cada 5 segundos
+</script>
+</head>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="guernica.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="icon" type="image/png" href="./icone.png">
+
+    <title>Exercício de Perguntas</title>
+   
+</head>
+<style>
+    #map{
+        height: 200px;
+    }
+    .aumentar-fonte{
+        font-size: 1.2em !important;
+    }
+
+    .diminuir-fonte{
+        font-size: 1em !important;
+    }
+    body.contraste .alternativa {
+    background-color: black !important;
+    color: yellow !important;
+    border: 1px solid yellow;
+}
+body.contraste #map {
+    border: 2px solid yellow;}
+    body.contraste {
+            background-color: black !important;
+            color: yellow !important;
+        }
+       
+        body.contraste a {
+            color: yellow !important;
+        }
+       
+        body.contraste button {
+            background-color: yellow !important;
+            color: black !important;
+        }
+</style>
+<body>
+    <nav>
+        <DIV ID="linguagem">
+            <button onclick="mudarIdioma('en')" id="lingua">EN</button>
+            <button onclick="mudarIdioma('pt')"id="lingua">PT</button>
+        </DIV>
+        <img src="foto.png" id="foto">
+        <ul>
+            <a href="guernica.html" ><li id="menu1">Início ▼</li></a>
+            <a href="autores_obras.html"><li  id="menu2">Literatura ▼</li></a>
+            <a href="index.html" ><li id="menu3">Exercícios ▼</li></a>
+        </ul>
+        <DIV ID="acessibilidade">
+            <button id="aumentar-fonte-btn"><i class="fa-solid fa-font"></i>+</button>
+            <button id="diminuir-fonte-btn"><i class="fa-solid fa-font"></i>-</button>
+            <button id="contraste-btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
+            <button id="ler-conteudo-btn"><i class="fa-solid fa-volume-high"></i></button>
+        </DIV>
+    </nav>
+<!--Pergunta 1-->
+    <div class="questionario">
+        <div class="pergunta" id="pergunta1">
+            <h3 id="titulo-pergunta1">Pergunta 1:</h3>
+            <p id="texto-pergunta1">(Enem)<br><br>
+       
+                Psicologia de um vencido<br><br>
+               
+                Eu, filho do carbono e do amoníaco,<br>
+                Monstro de escuridão e rutilância,<br>
+                Sofro, desde a epigênese da infância,<br>
+                A influência má dos signos do zodíaco.<br><br>
+               
+                Profundissimamente hipocondríaco,<br>
+                Este ambiente me causa repugnância…<br>
+                Sobe–me à boca uma ânsia análoga à ânsia<br>
+                Que se escapa da boca de um cardíaco.<br><br>
+               
+                Já o verme — este operário das ruínas —<br>
+                Que o sangue podre das carnificinas<br>
+                Come, e à vida em geral declara guerra,<br><br>
+               
+                Anda a espreitar meus olhos para roê–los,<br>
+                E há de deixar–me apenas os cabelos,<br>
+                Na frialdade ignorância da terra!<br><br>
+               
+                ANJOS, A. Obra completa. Rio de Janeiro: Nova Aguilar, 1994.<br><br>
+               
+                A poesia de Augusto dos Anjos revela aspectos de uma literatura de transição designada como pré-modernista. <br>Com relação à poética e à abordagem temática presentes no soneto, identificam–se marcas dessa literatura de transição, como</p>
+            <ul class="alternativas" id="alternativas-pergunta1">
+                <li class="alternativa" data-correta="false" id="alternativa1a">a) a forma do soneto, os versos metrificados, a presença de rimas e o vocabulário requintado, além do ceticismo, que antecipam conceitos estéticos vigentes no Modernismo.</li>
+                <li class="alternativa" data-correta="false" id="alternativa1b">b) o empenho do eu lírico pelo resgate da poesia simbolista, manifesta em metáforas como “Monstro de escuridão e relutância" e “influência má dos signos do zodíaco".</li>
+                <li class="alternativa" data-correta="false" id="alternativa1c">c) a seleção lexical emprestada ao cientificismo, como se lê em “carbono e amoníaco", “epigênese da infância" e “frialdade ignorância", que restitui a visão naturalista do homem.</li>
+                <li class="alternativa" data-correta="true" id="alternativa1d">d) a manutenção de elementos formais vinculados à estética do Parnasianismo e do Simbolismo, dimensionada pela inovação na expressividade poética, e o desconcerto existencial.</li>
+            </ul>
+       
+        </div>
+        <br>
+        <hr>
+        <!--Pergunta 2-->
+        <div class="pergunta" id="pergunta2">
+            <h3 id="titulo-pergunta2">Pergunta 2:</h3>
+            <p id="texto-pergunta2">(PUC-SP)<br><br>
+       
+                "Iria morrer, quem sabe naquela noite mesmo? E que tinha ele feito de sua vida? nada.<br>
+                Levara toda ela atrás da miragem de estudar a pátria, por amá-la e querê-la muito bem,<br>
+                no intuito de contribuir para a sua felicidade e prosperidade. Gastara a sua mocidade<br>
+                nisso, a sua virilidade também; e, agora que estava na velhice, como ela o recompensava, como ela o<br>
+                premiava, como ela o condenava? matando-o. E o que não<br>
+                deixara de ver, de gozar, de fruir, na sua vida? Tudo. Não brincara, não pandegara, não<br>
+                amara – todo esse lado da existência que parece fugir um pouco à sua tristeza<br>
+                necessária, ele não vira, ele não provara, ele não experimentara.<br><br>
+               
+                Desde dezoito anos que o tal patriotismo lhe absorvia e por ele fizera a tolice de estudar<br>
+                inutilidades. Que lhe importavam os rios? Eram grandes? Pois se fossem... Em que lhe<br>
+                contribuiria para a felicidade saber o nome dos heróis do Brasil? Em nada... O<br>
+                importante é que ele tivesse sido feliz. Foi? Não. Lembrou-se das suas causas de tupi,<br>
+                 do folclore, das suas tentativas agrícolas... Restava disto tudo em sua alma uma<br>
+                  sofisticação? Nenhuma! Nenhuma!"<br><br>
+               
+                (Lima Barreto)<br><br>
+               
+                As obras do autor desse trecho integram o período literário chamado Pré-Modernismo. Tal designação para este período se justifica, porque ele:</p><br>
+            <ul class="alternativas" id="alternativas-pergunta2">
+                <li class="alternativa" data-correta="false" id="alternativa2a">a) desenvolve temas do nacionalismo e se liga às vanguardas europeias.</li>
+                <li class="alternativa" data-correta="false" id="alternativa2b">b) engloba toda a produção literária que se fez antes do Modernismo.</li>
+                <li class="alternativa" data-correta="true" id="alternativa2c">c) antecipa temática e formalmente as manifestações modernistas.</li>
+                <li class="alternativa" data-correta="false" id="alternativa2d">d) se preocupa com o estudo das raças e das culturas formadoras do nordestino brasileiro.</li>
+            </ul>
+           
+        </div>
+        <br>
+        <hr>
+        <!--Pergunta 3-->
+        <div class="pergunta" id="pergunta3">
+            <h3 id="titulo-pergunta3">Pergunta 3:</h3>
+            <p id="texto-pergunta3">(UNITAU)<br><br>
+       
+                "Só ele não fala, não canta, não ri, não ama. Só ele, no meio de tanta vida, não vive."<br><br>
+               
+                Os comentários acima são endereçados por Monteiro Lobato:</p>
+            <ul class="alternativas" id="alternativas-pergunta3">
+                <li class="alternativa" data-correta="false" id="alternativa3a">a) ao nordestino.</li>
+                <li class="alternativa" data-correta="false" id="alternativa3b">b) ao menor.</li>
+                <li class="alternativa" data-correta="false" id="alternativa3c">c) ao sertão.</li>
+                <li class="alternativa" data-correta="true" id="alternativa3d">d) ao caboclo.</li>
+            </ul>
+       
+        </div>
+        <br>
+        <hr>
+        <!--Pergunta 4-->
+        <div class="pergunta" id="pergunta4">
+            <h3 id="titulo-pergunta4">Pergunta 4:</h3>
+            <p id="texto-pergunta4">(Fuvest)<br><br>
+               
+                No romance Triste Fim de Policarpo Quaresma, o nacionalismo exaltado e<br>
+                delirante da personagem principal motiva seu engajamento em três diferentes projetos,<br>
+                 que objetivam “reformar” o país. Esses projetos visam, sucessivamente, aos seguintes<br><br>
+                  setores da vida nacional:</p>
+            <ul class="alternativas" id="alternativas-pergunta4">
+                <li class="alternativa" data-correta="false" id="alternativa4a">a) linguístico, industrial, e militar;</li>
+                <li class="alternativa" data-correta="false" id="alternativa4b">b) escolar, agrícola e militar;</li>
+                <li class="alternativa" data-correta="false" id="alternativa4c">c) linguístico, político e militar;</li>
+                <li class="alternativa" data-correta="true" id="alternativa4d">d) cultural, agrícola e político;</li>
+            </ul>
+       
+        </div>
+        <br>
+        <hr>
+        <!--Pergunta 5-->
+        <div class="pergunta" id="pergunta5">
+            <h3 id="titulo-pergunta5">Pergunta 5:</h3>
+            <p id="texto-pergunta5">(ITA) Assinale a alternativa que rotula adequadamente o tratamento dado ao elemento indígena, nos romances O Guarani, de José de Alencar, e Triste fim de Policarpo Quaresma, de Lima Barreto, respectivamente:</p>
+            <ul class="alternativas" id="alternativas-pergunta5">
+                <li class="alternativa" data-correta="true" id="alternativa5a">a) Nacionalismo exaltado, nacionalismo caricatural.</li>
+                <li class="alternativa" data-correta="false" id="alternativa5b">b) Idolatria nacionalista, derrotismo nacional.</li>
+                <li class="alternativa" data-correta="false" id="alternativa5c">c) Aversão ao colonizador, aversão ao progresso.</li>
+                <li class="alternativa" data-correta="false" id="alternativa5d">d) Aversão ao colonizador, derrotismo nacional.</li>
+            </ul>
+            <br>
+        </div>
+        <br>
+        <hr>        
+</div>
+
+<footer>
+    <br/>
+    <div class="conteudo_footer">
+        <div id="sobreoprojeto">
+            <h2 id="sobreoprojeto1">Sobre o projeto</h2>
+            <br/>
+            <p class="texto_introducao" id="texto_introdutorio">Criamos o site Canaã como um projeto demonstrativo sobre Desenvolvimento de Sistemas do 3° Ensino Médio. Esse trabalho foi feito inteiramente para apresentação aos devidos professores na Integração SESI / SENAI, mais especificamente referente à área de Língua Portuguesa e História, acerca do tema Pré-Modernismo.</p>
+        </div>
+        <div id="contatos">
+            <h2 id="titulo_contatos">Contatos</h2>
+            <br/>
+            <ul>
+                <a href="https://www.instagram.com/xandy_velucci/"><li><i class="fa-brands fa-instagram"></i> Alexandre Eduardo da Silva Velucci</li></a>
+                <br/>
+                <a href="https://www.instagram.com/l.m.breda/"><li><i class="fa-brands fa-instagram"></i> Larissa Moroni Breda</li></a>
+                <br/>                  
+                <a href="https://www.instagram.com/anawutzleer/"><li><i class="fa-brands fa-instagram"></i> Ana Clara Wutzler</li></a>
+                <br/>  
+                <a href="https://www.instagram.com/eupriscila_pires/"><li><i class="fa-brands fa-instagram"></i> Priscila Pires de Carvalho</li></a>
+                <br/>
+            </ul>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</footer>
+<footer id="footer_baixo">
+    <h3 id="onde">Onde estamos <i class="fa-solid fa-map-location-dot"></i></h3>
+    <div id="map"></div>
+    <br/><br/>
+    <div id="sesi_senai">
+        <img id="escola1" src="./sesi.png">
+        <img id="escola" src="./senai.png">
+    </div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js">
+           
+</script>
+<script>
+    //Função para criar o mapa
+    function showMap(latitude, longitude){
+   
+        //Cria o mapa com a localização atual
+        var map = L.map('map').setView([latitude,longitude], 13);
+       
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:'openstreetmap'}).addTo(map);
+       
+        //Adiciona o pin da localização
+        L.marker([latitude,longitude]).addTo(map).bindPopup('Você está aqui!').openPopup();        
+       
+    }
+    //Função para obter a localização atual
+    function getLocation(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(
+                function(position){
+                    var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude;
+                    showMap(latitude,longitude);
+                },function(error){
+                    alert("Erro");
+                }
+            );  
+        }
+       
+        else{
+            alert("Localização não suportada");
+        }
+    }
+    getLocation();
+
+
+       
+        const alternativas = document.querySelectorAll('.alternativa');
+
+       
+        alternativas.forEach(function(alternativa) {
+            alternativa.addEventListener('click', function() {
+               
+                const correta = alternativa.getAttribute('data-correta') === 'true';
+
+             
+                if (correta) {
+                    alternativa.classList.add('correta');
+                } else {
+                    alternativa.classList.add('errada');
+                }
+
+       
+            });
+        });
+                //Aumentar fonte
+                document.getElementById('aumentar-fonte-btn').addEventListener('click',function(){
+                            document.body.classList.add('aumentar-fonte');
+                            document.body.classList.remove('diminuir-fonte')
+                        ;});
+               
+                //Dimniuir Fonte
+                document.getElementById('diminuir-fonte-btn').addEventListener('click',function(){
+                    document.body.classList.add('diminuir-fonte');
+                    document.body.classList.remove('aumentar-fonte')
+                ;});
+                //Alterar o contraste
+                document.getElementById('contraste-btn').addEventListener('click',function(){
+                    document.body.classList.toggle('contraste');
+                    questionarios = document.getElementsByClassName("questionario");
+                    for(let questionario of questionarios){
+                        if(questionario.style.backgroundColor == ''){
+                            questionario.style.backgroundColor = "black";
+                            questionario.style.color = "yellow";
+                        }
+                        else if(questionario.style.backgroundColor == 'black'){
+                            questionario.style.backgroundColor = "#afa78a";
+                            questionario.style.color = "black";
+                        }
+                        else if(questionario.style.backgroundColor == 'rgb(175, 167, 138)'){
+                            questionario.style.backgroundColor = "black";
+                            questionario.style.color = "yellow";
+                        }
+                       
+                    }
+
+                    footers = document.getElementsByClassName("conteudo_footer");
+                    for(let conteudo_footer of footers){
+                        if(conteudo_footer.style.backgroundColor == ''){
+                            conteudo_footer.style.backgroundColor = "black";
+                            conteudo_footer.style.color = "yellow";
+                        }
+                        else if(conteudo_footer.style.backgroundColor == 'black'){
+                            conteudo_footer.style.backgroundColor = "#333333";
+                            conteudo_footer.style.color = "white";
+                        }
+                        else if(conteudo_footer.style.backgroundColor == 'rgb(175, 167, 138)'){
+                            conteudo_footer.style.backgroundColor = "black";
+                            conteudo_footer.style.color = "yellow";
+                        }
+                    }
+
+                    introducao = document.getElementsByClassName("texto_introducao");
+                    for(let texto_introducao of introducao){
+                        if(texto_introducao.style.color == ''){
+                            texto_introducao.style.color = "yellow";
+                        }
+                        else if(texto_introducao.style.color == 'yellow'){
+                            texto_introducao.style.color = "white";
+                        }
+                        else if(texto_introducao.style.color == 'white'){
+                            texto_introducao.style.color = "yellow";
+                        }
+                       
+                    }
+                })
+
+                const traducoes = {
+    "pt": {
+        "menu1": "Início ▼",
+        "menu2": "Literatura ▼",
+        "menu3": "Exercícios ▼",
+        "titulo-pergunta1": "Pergunta 1:",
+        "texto-pergunta1": "(Enem)<br><br>Psicologia de um vencido<br><br>Eu, filho do carbono e do amoníaco,<br>Monstro de escuridão e rutilância,<br>Sofro, desde a epigênese da infância,<br>A influência má dos signos do zodíaco.<br><br>Profundissimamente hipocondríaco,<br>Este ambiente me causa repugnância…<br>Sobe–me à boca uma ânsia análoga à ânsia<br>Que se escapa da boca de um cardíaco.<br><br>Já o verme — este operário das ruínas —<br>Que o sangue podre das carnificinas<br>Come, e à vida em geral declara guerra,<br><br>Anda a espreitar meus olhos para roê–los,<br>E há de deixar–me apenas os cabelos,<br>Na frialdade ignorância da terra!<br><br>ANJOS, A. Obra completa. Rio de Janeiro: Nova Aguilar, 1994.<br><br>A poesia de Augusto dos Anjos revela aspectos de uma literatura de transição designada como pré-modernista. <br>Com relação à poética e à abordagem temática presentes no soneto, identificam–se marcas dessa literatura de transição, como",
+        "alternativas-pergunta1": {
+            "alternativa1a": "a) a forma do soneto, os versos metrificados, a presença de rimas e o vocabulário requintado, além do ceticismo, que antecipam conceitos estéticos vigentes no Modernismo.",
+            "alternativa1b": "b) o empenho do eu lírico pelo resgate da poesia simbolista, manifesta em metáforas como “Monstro de escuridão e relutância\" e “influência má dos signos do zodíaco\".",
+            "alternativa1c": "c) a seleção lexical emprestada ao cientificismo, como se lê em “carbono e amoníaco\", “epigênese da infância\" e “frialdade ignorância\", que restitui a visão naturalista do homem.",
+            "alternativa1d": "d) a manutenção de elementos formais vinculados à estética do Parnasianismo e do Simbolismo, dimensionada pela inovação na expressividade poética, e o desconcerto existencial."
+        },
+        "titulo-pergunta2": "Pergunta 2:",
+        "texto-pergunta2": "(PUC-SP)<br><br>\"Iria morrer, quem sabe naquela noite mesmo? E que tinha ele feito de sua vida? nada.<br>Levara toda ela atrás da miragem de estudar a pátria, por amá-la e querê-la muito bem,<br>no intuito de contribuir para a sua felicidade e prosperidade. Gastara a sua mocidade<br>nisso, a sua virilidade também; e, agora que estava na velhice, como ela o recompensava, como ela o<br>premiava, como ela o condenava? matando-o. E o que não<br>deixara de ver, de gozar, de fruir, na sua vida? Tudo. Não brincara, não pandegara, não<br>amara – todo esse lado da existência que parece fugir um pouco à sua tristeza<br>necessária, ele não vira, ele não provara, ele não experimentara.<br><br>Desde dezoito anos que o tal patriotismo lhe absorvia e por ele fizera a tolice de estudar<br>inutilidades. Que lhe importavam os rios? Eram grandes? Pois se fossem... Em que lhe<br>contribuiria para a felicidade saber o nome dos heróis do Brasil? Em nada... O<br>importante é que ele tivesse sido feliz. Foi? Não. Lembrou-se das suas causas de tupi,<br>do folclore, das suas tentativas agrícolas... Restava disto tudo em sua alma uma<br>sofisticação? Nenhuma! Nenhuma!\"<br><br>(Lima Barreto)<br><br>As obras do autor desse trecho integram o período literário chamado Pré-Modernismo. Tal designação para este período se justifica, porque ele:",
+        "alternativas-pergunta2": {
+            "alternativa2a": "a) desenvolve temas do nacionalismo e se liga às vanguardas europeias.",
+            "alternativa2b": "b) engloba toda a produção literária que se fez antes do Modernismo.",
+            "alternativa2c": "c) antecipa temática e formalmente as manifestações modernistas.",
+            "alternativa2d": "d) se preocupa com o estudo das raças e das culturas formadoras do nordestino brasileiro."
+        },
+        "titulo-pergunta3": "Pergunta 3:",
+        "texto-pergunta3": "(UNITAU)<br><br>\"Só ele não fala, não canta, não ri, não ama. Só ele, no meio de tanta vida, não vive.\"<br><br>Os comentários acima são endereçados por Monteiro Lobato:",
+        "alternativas-pergunta3": {
+            "alternativa3a": "a) ao nordestino.",
+            "alternativa3b": "b) ao menor.",
+            "alternativa3c": "c) ao sertão.",
+            "alternativa3d": "d) ao caboclo."
+        },
+        "titulo-pergunta4": "Pergunta 4:",
+        "texto-pergunta4": "(Fuvest)<br><br>No romance Triste Fim de Policarpo Quaresma, o nacionalismo exaltado e<br>delirante da personagem principal motiva seu engajamento em três diferentes projetos,<br>que objetivam “reformar” o país. Esses projetos visam, sucessivamente, aos seguintes<br><br>setores da vida nacional:",
+        "alternativas-pergunta4": {
+            "alternativa4a": "a) linguístico, industrial, e militar;",
+            "alternativa4b": "b) escolar, agrícola e militar;",
+            "alternativa4c": "c) linguístico, político e militar;",
+            "alternativa4d": "d) cultural, agrícola e político;"
+        },
+        "titulo-pergunta5": "Pergunta 5:",
+        "texto-pergunta5": "(ITA) Assinale a alternativa que rotula adequadamente o tratamento dado ao elemento indígena, nos romances O Guarani, de José de Alencar, e Triste fim de Policarpo Quaresma, de Lima Barreto, respectivamente:",
+        "alternativas-pergunta5": {
+            "alternativa5a": "a) Nacionalismo exaltado, nacionalismo caricatural.",
+            "alternativa5b": "b) Idolatria nacionalista, derrotismo nacional.",
+            "alternativa5c": "c) Aversão ao colonizador, aversão ao progresso.",
+            "alternativa5d": "d) Aversão ao colonizador, derrotismo nacional.",
+           
+    },
+    "sobreoprojeto1":"Sobre o projeto",
+    "texto_introdutorio":"Criamos o site Canaã como um projeto demonstrativo sobre Desenvolvimento de Sistemas do 3° Ensino Médio. Esse trabalho foi feito inteiramente para apresentação aos devidos professores na Integração SESI / SENAI, mais especificamente referente à área de Língua Portuguesa e História, acerca do tema Pré-Modernismo.",
+    "titulo_contatos":"Contatos",
+    "onde":"Onde estamos",
+},
+    "en": {
+        "menu1": "Home ▼",
+        "menu2": "Literature ▼",
+        "menu3": "Exercises ▼",
+"titulo-pergunta1": "Question 1:",
+        "texto-pergunta1": "(Enem)<br><br>Psychology of a defeated man<br><br>I, son of carbon and ammonia,<br>Monster of darkness and brilliance,<br>I have suffered, since the epigenesis of childhood,<br>The bad influence of the signs of the zodiac.<br><br>Deeply hypochondriac,<br>This environment causes me disgust…<br>A yearning analogous to the yearning<br>That escapes from the mouth of a cardiac patient rises in my mouth.<br><br>Now the worm — this worker of the ruins —<br>That eats the rotten blood of the carnage<br>And declares war on life in general,<br><br>Comes looking for my eyes to gnaw them,<br>And will leave me only my hair,<br>In the cold ignorance of the earth!<br><br>ANJOS, A. Complete work. Rio de Janeiro: Nova Aguilar, 1994.<br><br>The poetry of Augusto dos Anjos reveals aspects of a transitional literature designated as pre-modernist. <br>Regarding the poetics and thematic approach present in the sonnet, marks of this transitional literature can be identified, such as",
+        "alternativas-pergunta1": {
+           "alternativa1a": "a) the form of the sonnet, the metrified verses, the presence of rhymes, and the refined vocabulary, in addition to the skepticism, which anticipate aesthetic concepts prevailing in Modernism.",
+            "alternativa1b": "b) the lyrical effort to recover Symbolist poetry, manifested in metaphors like 'Monster of darkness and reluctance' and 'evil influence of the zodiac signs.'",
+            "alternativa1c": "c) the lexical selection borrowed from scientificism, as seen in 'carbon and ammonia,' 'epigenesis of childhood,' and 'cold ignorance,' which restores the naturalist view of man.",
+            "alternativa1d": "d) the maintenance of formal elements linked to the aesthetics of Parnassianism and Symbolism, measured by innovation in poetic expressiveness, and existential disorder."
+            },
+        "titulo-pergunta2": "Question 2:",
+        "texto-pergunta2": "(PUC-SP)<br><br>\"He was going to die, who knows, that very night? And what had he done with his life? Nothing.<br>He had spent it all chasing the mirage of studying the country, because he loved it and wanted it very much,<br>with the intention of contributing to its happiness and prosperity. He had spent his youth<br>on this, his virility too; and, now that he was old, how did it reward him, how did it reward him, how did it condemn him? By killing him. And what had he not failed to see, to enjoy, to enjoy, in his life? Everything. He had not played, had not partied, had not loved – all that side of existence that seems to escape a little from its necessary sadness, he had not seen, he had not tasted, he had not experienced. Since he was eighteen, this patriotism had absorbed him and for it he had done the foolishness of studying useless things. What did rivers matter to him? Were they big? Well, if they were... What would knowing the names of Brazil's heroes contribute to his happiness? Not at all... The important thing is that he had been happy. Was he? No. He remembered his Tupi causes, his folklore, his agricultural attempts... Was there any sophistication left in his soul from all this? None! None!\"<br><br>(Lima Barreto)<br><br>The works of the author of this excerpt are part of the literary period called Pre-Modernism. This designation for this period is justified, because he:",
+        "alternativas-pergunta2": {
+            "alternativa2a": "a) develops themes of nationalism and is linked to the European avant-gardes.",
+        "alternativa2b": "b) encompasses all the literary production that was created before Modernism.",
+        "alternativa2c": "c) anticipates thematically and formally the modernist manifestations.",
+        "alternativa2d": "d) is concerned with the study of races and cultures that formed the Brazilian Northeastern identity.",
+        },
+        "titulo-pergunta3": "Question 3:",
+        "texto-pergunta3": "(UNITAU)<br><br>\"Only he does not speak, does not sing, does not laugh, does not love. Only he, in the middle of so much life, does not live.\"<br><br>The comments above are addressed by Monteiro Lobato:",
+        "alternativas-pergunta3": {
+    "alternativa3a": "a) to the Northeasterner.",
+    "alternativa3b": "b) to the underprivileged.",
+    "alternativa3c": "c) to the hinterland.",
+    "alternativa3d": "d) to the mixed-race Brazilian."
+},
+
+        "titulo-pergunta4": "Question 4:",
+        "texto-pergunta4": "(Fuvest)<br><br>In the novel *Triste Fim de Policarpo Quaresma*, the exaggerated and delirious nationalism of the main character motivates his engagement in three different projects,<br>aimed at 'reforming' the country. These projects successively target the following<br><br>sectors of national life:",
+        "alternativas-pergunta4": {
+            "alternativa4a": "a) linguistic, industrial, and military;",
+            "alternativa4b": "b) educational, agricultural, and military;",
+            "alternativa4c": "c) linguistic, political, and military;",
+            "alternativa4d": "d) cultural, agricultural, and political;"
+        },
+
+        "titulo-pergunta5": "Question 5:",
+        "texto-pergunta5": "(ITA) Select the alternative that appropriately labels the treatment given to the indigenous element in the novels *O Guarani*, by José de Alencar, and *Triste Fim de Policarpo Quaresma*, by Lima Barreto, respectively:",
+        "alternativas-pergunta5": {
+            "alternativa5a": "a) Exalted nationalism, caricatural nationalism.",
+            "alternativa5b": "b) Nationalist idolatry, national defeatism.",
+            "alternativa5c": "c) Aversion to the colonizer, aversion to progress.",
+            "alternativa5d": "d) Aversion to the colonizer, national defeatism.",
+           
+        },
+        "sobreoprojeto1": "About the project",
+        "texto_introdutorio": "We created the Canaã website as a demonstration project for Systems Development by 3rd-year high school students. This work was entirely made for presentation to the respective teachers at the SESI / SENAI Integration, specifically in the Portuguese Language and History areas, regarding the topic of Pre-Modernism.",
+        "titulo_contatos": "Contacts",
+        "onde" : "Where we Are"
+    }};
+
+function mudarIdioma(idioma) {
+    document.getElementById("menu1").innerText = traducoes[idioma].menu1;
+    document.getElementById("menu2").innerText = traducoes[idioma].menu2;
+    document.getElementById("menu3").innerText = traducoes[idioma].menu3;
+
+    // Pergunta 1
+    document.getElementById("titulo-pergunta1").innerHTML = traducoes[idioma]["titulo-pergunta1"];
+    document.getElementById("texto-pergunta1").innerHTML = traducoes[idioma]["texto-pergunta1"];
+    document.getElementById("alternativa1a").innerText = traducoes[idioma]["alternativas-pergunta1"].alternativa1a;
+    document.getElementById("alternativa1b").innerText = traducoes[idioma]["alternativas-pergunta1"].alternativa1b;
+    document.getElementById("alternativa1c").innerText = traducoes[idioma]["alternativas-pergunta1"].alternativa1c;
+    document.getElementById("alternativa1d").innerText = traducoes[idioma]["alternativas-pergunta1"].alternativa1d;
+
+    // Pergunta 2
+    document.getElementById("titulo-pergunta2").innerHTML = traducoes[idioma]["titulo-pergunta2"];
+    document.getElementById("texto-pergunta2").innerHTML = traducoes[idioma]["texto-pergunta2"];
+    document.getElementById("alternativa2a").innerText = traducoes[idioma]["alternativas-pergunta2"].alternativa2a;
+    document.getElementById("alternativa2b").innerText = traducoes[idioma]["alternativas-pergunta2"].alternativa2b;
+    document.getElementById("alternativa2c").innerText = traducoes[idioma]["alternativas-pergunta2"].alternativa2c;
+    document.getElementById("alternativa2d").innerText = traducoes[idioma]["alternativas-pergunta2"].alternativa2d;
+
+    // Pergunta 3
+    document.getElementById("titulo-pergunta3").innerHTML = traducoes[idioma]["titulo-pergunta3"];
+    document.getElementById("texto-pergunta3").innerHTML = traducoes[idioma]["texto-pergunta3"];
+    document.getElementById("alternativa3a").innerText = traducoes[idioma]["alternativas-pergunta3"].alternativa3a;
+    document.getElementById("alternativa3b").innerText = traducoes[idioma]["alternativas-pergunta3"].alternativa3b;
+    document.getElementById("alternativa3c").innerText = traducoes[idioma]["alternativas-pergunta3"].alternativa3c;
+    document.getElementById("alternativa3d").innerText = traducoes[idioma]["alternativas-pergunta3"].alternativa3d;
+
+    // Pergunta 4
+    document.getElementById("titulo-pergunta4").innerHTML = traducoes[idioma]["titulo-pergunta4"];
+    document.getElementById("texto-pergunta4").innerHTML = traducoes[idioma]["texto-pergunta4"];
+    document.getElementById("alternativa4a").innerText = traducoes[idioma]["alternativas-pergunta4"].alternativa4a;
+    document.getElementById("alternativa4b").innerText = traducoes[idioma]["alternativas-pergunta4"].alternativa4b;
+    document.getElementById("alternativa4c").innerText = traducoes[idioma]["alternativas-pergunta4"].alternativa4c;
+    document.getElementById("alternativa4d").innerText = traducoes[idioma]["alternativas-pergunta4"].alternativa4d;
+
+    // Pergunta 5
+    document.getElementById("titulo-pergunta5").innerHTML = traducoes[idioma]["titulo-pergunta5"];
+    document.getElementById("texto-pergunta5").innerHTML = traducoes[idioma]["texto-pergunta5"];
+    document.getElementById("alternativa5a").innerText = traducoes[idioma]["alternativas-pergunta5"].alternativa5a;
+    document.getElementById("alternativa5b").innerText = traducoes[idioma]["alternativas-pergunta5"].alternativa5b;
+    document.getElementById("alternativa5c").innerText = traducoes[idioma]["alternativas-pergunta5"].alternativa5c;
+    document.getElementById("alternativa5d").innerText = traducoes[idioma]["alternativas-pergunta5"].alternativa5d;
+
+    //footer
+    document.getElementById("sobreoprojeto1").innerText = traducoes[idioma].sobreoprojeto1;
+    document.getElementById("texto_introdutorio").innerText = traducoes[idioma].texto_introdutorio;
+    document.getElementById("titulo_contatos").innerText = traducoes[idioma].titulo_contatos;
+    document.getElementById("onde").innerText = traducoes[idioma].onde;
+}                
+    </script>
+
+</body>
+</html>
